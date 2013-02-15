@@ -1,0 +1,126 @@
+
+/* ==========================================================================
+   Color Scheme: Hot Orange - Light
+   ========================================================================== */
+
+/*
+ * Text selection colors
+ */
+
+::-moz-selection {
+	background: rgb(255, 252, 181);
+}
+
+::selection {
+	background: rgb(255, 252, 181);
+}
+
+html,
+button,
+input,
+select,
+textarea {
+	color: rgb(21, 19, 19);
+}
+
+body {
+	background-color: rgb(235, 219, 209);
+	background-image: url(data:image/png;base64,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);
+}
+
+/*
+ * Text shadow
+ */
+
+h1, h2, h3, h4, h5, h6 {
+	text-shadow: 1px 1px 0 rgb(255, 255, 255);
+}
+
+.title-font {
+	text-shadow: 3px 3px 0 rgb(255, 255, 255);
+}
+
+.tagline {
+	text-shadow: 2px 2px 0 rgb(255, 255, 255);
+}
+
+.about, .blog-description {
+	text-shadow: 2px 2px 0 rgb(255, 255, 255);
+}
+
+/*
+ * Highlight color - top ribbon and links
+ */
+
+.top-ribbon {
+	background-color: rgb(219, 54, 8);
+}
+
+a {
+	color:rgb(219, 54, 8);
+	border-bottom: dotted 1px rgb(219, 54, 8);
+}
+
+/*
+ * Text & other Colors
+ */
+
+a:hover {
+	color: rgb(196, 30, 50);
+	border-bottom: dotted 1px rgb(196, 30, 50);
+}
+
+.sparator {
+	border-bottom: dashed 2px rgb(201, 194, 194);
+}
+
+blockquote {
+	border-left: solid 1px rgb(226, 221, 219);
+}
+
+.sidebar-font {
+	color: rgb(221, 218, 217);
+}
+
+@media all and (max-width:800px){
+	.sidebar-font {
+		color: rgb(164, 157, 154);
+	}
+}
+
+figcaption,
+blockquote,
+.meta-info-font,
+.site-footer-font {
+	color: rgb(126, 116, 113);
+}
+
+/*
+ * Home button
+ */
+
+.home a {
+	color: rgb(170, 167, 166);
+}
+
+.home a:hover {
+	color: rgb(20, 19, 19);
+}
+
+@media all and (min-width:1031px) {
+
+	.home a {
+		color: rgb(20, 19, 19);
+	}
+}
+
+/*
+ * Resets - elements that were altered
+ * (usually by being a link) that I want to revert to the original color.
+ */
+
+ .entry-title-font a,
+ .category,
+ .category:hover {
+	color: rgb(21, 19, 19);
+}

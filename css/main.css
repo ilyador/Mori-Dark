@@ -1,0 +1,935 @@
+/*
+ * HTML5 Boilerplate
+ *
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+
+/*
+ * Remove text-shadow in selection highlight: h5bp.com/i
+ * These selection declarations have to be separate.
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+	text-shadow: none;
+}
+
+::selection {
+	text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+	display: block;
+	height: 1px;
+	border: 0;
+	border-top: 1px solid #ccc;
+	margin: 1em 0;
+	padding: 0;
+}
+
+/*
+ * Remove the gap between images and the bottom of their containers: h5bp.com/i/440
+ */
+
+img {
+	vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+	border: 0;
+	margin: 0;
+	padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+	resize: vertical;
+}
+
+/* ==========================================================================
+   Chrome Frame prompt
+   ========================================================================== */
+
+.chromeframe {
+	margin: 0.2em 0;
+	background: #ccc;
+	color: #000;
+	padding: 0.2em 0;
+}
+
+
+/* ==========================================================================
+   Basic layout
+   ========================================================================== */
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2) {
+	body {
+		background-size: 50%;
+	}
+}
+
+.site-header {
+	min-width: 280px;
+	max-width: 826px;
+	margin: 0 auto;
+}
+
+.site-header {
+	padding: 0 0 42px;
+}
+
+.site-header .tagline {
+	margin: 0;
+}
+
+.sparator {
+	width: 100%;
+}
+
+.site-header, .about-me, .from-my-blog {
+	width: 75%;
+}
+
+@media all and (min-width:601px) and (max-width:1020px) {
+	.site-header, .about-me, .from-my-blog {
+		width: 82%;
+	}
+}
+
+.works, .works-hex, nav, .blog-excerpts-wrapper {
+	background-color: rgba(0,0,0,0.4);
+}
+
+
+/* ==========================================================================
+   Navigation
+   ========================================================================== */
+
+nav {
+	height: 78px;
+	padding-bottom: 5px;
+}
+
+.top-ribbon {
+	height: 5px;
+}
+
+nav ul {
+	width: 75%;
+	min-width: 280px;
+	max-width: 826px;
+	margin: 0 auto;
+	padding: 0;
+}
+
+nav li {
+	float: right;
+	display: inline-block;
+	padding: 15px 10px 2px;
+	margin: 0 6px;
+	-webkit-border-radius: 0 0 7px 7px;
+	-moz-border-radius: 0 0 7px 7px;
+	border-radius: 0 0 7px 7px;
+	cursor: pointer;
+}
+
+.win nav li {
+	padding: 12px 10px 5px;
+}
+
+nav li:hover {
+	background-color: rgb(192, 23, 104);
+	text-shadow: 1px 1px 3px rgb(0, 0, 0);
+}
+
+
+/* ==========================================================================
+   Hexagon shape defaults
+   ========================================================================== */
+
+.hexagon {
+	display: inline-block;
+	overflow: hidden;
+	visibility: hidden;
+	-webkit-transform: rotate(120deg);
+	   -moz-transform: rotate(120deg);
+			transform: rotate(120deg);
+}
+
+.hexagon-in1, .hexagon-in2 {
+	overflow: hidden;
+	display: block;
+	width: 100%;
+	height: 100%;
+	-webkit-transform: rotate(-60deg);
+	   -moz-transform: rotate(-60deg);
+			transform: rotate(-60deg);
+}
+
+.hexagon-in2 {
+	overflow: hidden;
+	visibility: visible;
+	background-color: rgba(46, 46, 46, 1);
+}
+
+
+/* ==========================================================================
+   Works & Gallery effects
+   ========================================================================== */
+
+@media all and (min-width:1031px) {
+
+	.thumbnail {
+		-webkit-transition: all 0.2s ease-out;
+		   -moz-transition: all 0.2s ease-out;
+				transition: all 0.2s ease-out;
+	}
+
+	.thumbnail:hover {
+		-webkit-transition: all 0.2s ease-out;
+		   -moz-transition: all 0.2s ease-out;
+				transition: all 0.2s ease-out;
+	}
+
+	.works-hex .thumbnail:hover, .gallery-hex .thumbnail:hover {
+		width: 110%;
+		margin: 0 0 0 -5%;
+	}
+
+	.works .thumbnail, .gallery .thumbnail {
+		-webkit-filter: grayscale(1) sepia(0.03);
+	}
+
+	.works .thumbnail:hover , .gallery .thumbnail:hover {
+		-webkit-filter: grayscale(0) sepia(0);
+	}
+}
+
+
+/* ==========================================================================
+   Works
+   ========================================================================== */
+
+.thumbnail {
+	width: 100%;
+}
+
+.works, .works-hex {
+	text-align: center;
+	overflow: hidden;
+}
+
+.category {
+	border: none;
+	display: inline-block;
+	padding-bottom: 2%;
+}
+
+.category:hover {
+	border: none;
+}
+
+.works .category {
+	width: 23%;
+	min-width: 90px;
+	max-width: 256px;
+	margin: 0 12px;
+}
+
+.four.works .category {
+	width: 17%;
+	min-width: 72px;
+	max-width: 186px;
+	margin: 0 11px;
+}
+
+.works-hex .category {
+	width: 25%;
+	min-width: 100px;
+	max-width: 270px;
+	margin: 0 1px;
+}
+
+@media all and (max-width:480px) {
+
+	.works-hex .category {
+		margin: 0;
+	}
+}
+
+@media all and (min-width:481px) and (max-width:1020px){
+
+	.works .category {
+		margin: 0 1.5% 0;
+		width: 25%;
+	}
+
+	.four.works .category {
+		margin: 0 1.5% 0;
+		width: 18%;
+	}
+}
+
+@media all and (max-width:480px) {
+
+	.works .category {
+		margin: 3% 1.5% 0;
+		width: 25%;
+	}
+
+	.four.works .category {
+		margin: 3% 0.5% 0;
+		width: 21%;
+	}
+}
+
+.works .thumbnail, .gallery .thumbnail {
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+}
+
+.wrapper {
+	display: inline-block;
+	position: relative;
+	overflow: hidden;
+	width: 100%;
+}
+
+.works .wrapper {
+	margin: 10% 0 17% 0;
+}
+
+.works-hex .wrapper {
+	margin: 17% 0;
+}
+
+.works-hex .wrapper:after {
+	padding-top: 116%; /*ratio*/
+	display: block;
+	content: '';
+}
+
+.works-hex .hexagon {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	left: 0;
+}
+
+.category-name {
+	display: inline-block;
+	margin-top: -9%;
+}
+
+.win .category-name {
+	margin-top: -12%;
+}
+
+
+/* ==========================================================================
+   About me
+   ========================================================================== */
+
+.about-me {
+	min-width: 280px;
+	max-width: 826px;
+	margin: 37px auto 45px;
+}
+
+.twitter-stream {
+	display: inline-block;
+	width: 31%;
+	margin: 0 0 0 4%;
+	vertical-align: top;
+}
+
+.about-me .about {
+	width: 64%;
+	display: inline-block;
+}
+
+.square .about-me .about {
+	width: 65%;
+	display: inline-block;
+}
+
+.square .twitter-stream {
+	display: inline-block;
+	width: 31%;
+	margin: 0 0 0 3%;
+}
+
+.tweets img {
+	display: none !important;
+	visibility: hidden;
+}
+
+
+@media all and (max-width:800px) {
+
+	.square .about-me .about, .about-me .about {
+		width: 100%;
+		margin: 0 0 27px 0;
+	}
+	.square .about-me .twitter-stream, .about-me .twitter-stream {
+		width: 100%;
+		margin: 0 0 35px;
+		display: inline-block;
+	}
+}
+
+
+/* ==========================================================================
+   Blog & Single post
+   ========================================================================== */
+
+.from-my-blog {
+	min-width: 280px;
+	max-width: 826px;
+	margin: 0 auto;
+	padding: 1px 0 90px;
+}
+
+.blog-categories {
+	width: 75%;
+	min-width: 280px;
+	max-width: 600px;
+	margin: 30px auto 90px;
+}
+
+.blog-excerpts {
+	width: 66%;
+	display: inline-block;
+}
+
+
+@media all and (max-width:800px) {
+	.blog-excerpts {
+		width: 100%;
+		margin-right: 0;
+	}
+}
+
+.sidebar {
+	width: 29%;
+	margin: 14px 4% 0 0;
+	display: inline-block;
+	vertical-align: top;
+	max-width: 240px;
+}
+
+.blog-description {
+	margin-top: -7px;
+}
+
+.sidebar h2 {
+	margin-left: -2%;
+	width: 500px;
+	position: relative;
+	right: 137px;
+}
+
+/*
+ * Windows and mac font baseline are different,
+ * so in order to get consistency I had to use a platform prefix
+ */
+
+.win .sidebar h2 {
+	margin-top: -18px;
+	margin-bottom: 34px;
+}
+
+@media all and (max-width:800px) {
+	.sidebar {
+		width: 100%;
+		max-width: 800px;
+		margin: 0;
+	}
+
+	.blog-description {
+		margin: 0 0 19px 0;
+		display: inline-block;
+		width: 75%;
+	}
+
+	.sidebar h2 {
+		display: inline-block;
+		vertical-align: top;
+		letter-spacing: -2px;
+		margin: 10px 4% 0 0;
+
+	}
+
+	.win .sidebar h2 {
+		margin: 2px 4% 0 0;
+	}
+}
+
+.blog-excerpts .post-excerpt, .blog-categories .post-excerpt {
+	margin-bottom: 40px;
+}
+
+.blog-excerpts .post-excerpt:last-child, .blog-categories .post-excerpt:last-child {
+	margin-bottom: 0;
+}
+
+.post {
+	width: 85%;
+	min-width: 280px;
+	max-width: 600px;
+	margin: 0 auto;
+	padding: 45px 0 90px;
+}
+
+@media all and (min-width:1021px) and (max-width:1400px) {
+
+	.post.two-column {
+		max-width: 1060px;
+	}
+}
+
+@media all and (min-width:1401px) {
+
+	.post {
+		max-width: 650px;
+	}
+}
+
+.categories-header {
+	width: 75%;
+	min-width: 280px;
+	max-width: 800px;
+	padding: 45px 0 0;
+	margin: 0 auto;
+}
+
+.video-embed {
+	position: relative;
+	padding: 30px 0 56.25%;
+	margin: 0 0 1.5em;
+	height: 0;
+	overflow: hidden;
+}
+
+.video-embed iframe,
+.video-embed object,
+.video-embed embed {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+.post figure {
+	margin: 0 0 1.5em;
+}
+
+.post img {
+	width: 100%;
+}
+
+
+/* ==========================================================================
+   Gallery
+   ========================================================================== */
+
+.gallery, .gallery-hex {
+	width: 85%;
+	min-width: 314px;
+}
+
+.gallery-hex {
+	max-width: 719px;
+	margin: 70px auto 90px;
+}
+
+.gallery {
+	max-width: 800px;
+	margin: 0 auto 90px;
+}
+
+.gallery .wrapper, .gallery-hex .wrapper {
+	display: inline-block;
+	position: relative;
+	overflow: hidden;
+
+}
+
+.gallery-hex .wrapper {
+	width: 32%;
+	margin: -9.3% 0.2% 0;
+}
+
+.gallery .wrapper {
+	width: 29%;
+	min-width: 100px;
+	margin: 2%  1.6%;
+}
+
+.gallery .hexagon a {
+	border: none;
+	margin: 0;
+}
+
+@media all and (max-width:800px) {
+
+	.gallery-hex {
+		padding: 0 0 100px 1.9%;
+		margin-top: 6%;
+	}
+}
+
+@media all and (max-width:320px) {
+
+	.gallery {
+		margin-left: 5px;
+	}
+
+	.gallery .wrapper {
+		margin: 0 0 7px;
+	}
+}
+
+.gallery-hex .wrapper:after {
+	padding-top: 116%;
+	display: block;
+	content: '';
+}
+
+.gallery-hex .wrapper:hover {
+	z-index: 100;
+}
+
+.gallery-hex .hexagon {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	left: 0;
+}
+
+.gallery-hex .wrapper:nth-child(5n+4) {
+	margin-left: 16.75%;
+}
+
+.gallery-hex .hexagon a {
+	border: none;
+	margin: 0;
+}
+
+
+/* ==========================================================================
+   Single work
+   ========================================================================== */
+
+.single-work {
+	margin: 60px 0 90px;
+}
+
+.description, .image {
+	display: inline-block;
+	vertical-align: top;
+}
+
+.image {
+	width: 67%;
+	margin-left: 2em;
+}
+
+.description {
+	width: 29%;
+	box-sizing: border-box;
+	padding: 0 2em;
+	margin-left: -4px;
+}
+
+.image img {
+	width: 100%;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+}
+
+.image footer {
+	margin-top: 20px;
+	text-align: center;
+}
+
+@media all and (max-width:1020px) {
+
+	.single-work {
+		margin-top: 56px;
+	}
+
+	.image {
+		width: 100%;
+		padding: 0;
+		margin-left: 0;
+	}
+
+	.description {
+		width: 100%;
+		padding: 0 2em;
+		margin: 45px 0 0 0;
+	}
+
+	.image img {
+		-webkit-border-radius: 0px;
+		-moz-border-radius: 0px;
+		border-radius: 0px;
+	}
+}
+
+
+@media all and (min-width:1601px) {
+
+	.image {
+		width: 73%;
+	}
+
+	.description {
+		width: 20%;
+		padding: 0 2%;
+	}
+}
+
+.gallery .wrapper a {
+	border: none;
+	margin: 0;
+	padding: 0;
+}
+
+/* ==========================================================================
+   Home button
+   ========================================================================== */
+
+.home {
+	position: absolute;
+	top: 6px;
+	left: 10px;
+	font-size: 34px;
+}
+
+.home a {
+	margin: 0;
+	border: none;
+
+	-webkit-transition: all 0.2s ease-out;
+	   -moz-transition: all 0.2s ease-out;
+			transition: all 0.2s ease-out;
+}
+
+.home a:hover {
+	-webkit-transition: all 0.2s ease-out;
+	   -moz-transition: all 0.2s ease-out;
+			transition: all 0.2s ease-out;
+}
+
+
+/* ==========================================================================
+   Footer
+   ========================================================================== */
+
+.contact {
+	margin: 45px 15px 15px;
+}
+
+.copyright {
+	margin: 0 15px 30px;
+}
+
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Image replacement
+ */
+
+.ir {
+	background-color: transparent;
+	border: 0;
+	overflow: hidden;
+	/* IE 6/7 fallback */
+	*text-indent: -9999px;
+}
+
+.ir:before {
+	content: "";
+	display: block;
+	width: 0;
+	height: 100%;
+}
+
+/*
+ * Hide from both screenreaders and browsers: h5bp.com/u
+ */
+
+.hidden {
+	display: none !important;
+	visibility: hidden;
+}
+
+/*
+ * Hide only visually, but have it available for screenreaders: h5bp.com/v
+ */
+
+.visuallyhidden {
+	border: 0;
+	clip: rect(0 0 0 0);
+	height: 1px;
+	margin: -1px;
+	overflow: hidden;
+	padding: 0;
+	position: absolute;
+	width: 1px;
+}
+
+/*
+ * Extends the .visuallyhidden class to allow the element to be focusable
+ * when navigated to via the keyboard: h5bp.com/p
+ */
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+	clip: auto;
+	height: auto;
+	margin: 0;
+	overflow: visible;
+	position: static;
+	width: auto;
+}
+
+/*
+ * Hide visually and from screenreaders, but maintain layout
+ */
+
+.invisible {
+	visibility: hidden;
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+
+.clearfix:before,
+.clearfix:after {
+	content: " "; /* 1 */
+	display: table; /* 2 */
+}
+
+.clearfix:after {
+	clear: both;
+}
+
+/*
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+
+.clearfix {
+	*zoom: 1;
+}
+
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid required HTTP connection: h5bp.com/r
+   ========================================================================== */
+
+@media print {
+	* {
+		background: transparent !important;
+		color: #000 !important; /* Black prints faster: h5bp.com/s */
+		box-shadow:none !important;
+		text-shadow: none !important;
+	}
+
+	a,
+	a:visited {
+		text-decoration: underline;
+	}
+
+	a[href]:after {
+		content: " (" attr(href) ")";
+	}
+
+	abbr[title]:after {
+		content: " (" attr(title) ")";
+	}
+
+	/*
+	 * Don't show links for images, or javascript/internal links
+	 */
+
+	.ir a:after,
+	a[href^="javascript:"]:after,
+	a[href^="#"]:after {
+		content: "";
+	}
+
+	pre,
+	blockquote {
+		border: 1px solid #999;
+		page-break-inside: avoid;
+	}
+
+	thead {
+		display: table-header-group; /* h5bp.com/t */
+	}
+
+	tr,
+	img {
+		page-break-inside: avoid;
+	}
+
+	img {
+		max-width: 100% !important;
+	}
+
+	@page {
+		margin: 0.5cm;
+	}
+
+	p,
+	h2,
+	h3 {
+		orphans: 3;
+		widows: 3;
+	}
+
+	h2,
+	h3 {
+		page-break-after: avoid;
+	}
+}

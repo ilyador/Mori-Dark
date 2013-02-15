@@ -1,0 +1,102 @@
+
+/* ==========================================================================
+   Color Scheme: Hot Orange - Dark
+   ========================================================================== */
+
+/*
+ * Text selection colors
+ */
+
+::-moz-selection {
+	background: rgb(107, 34, 0);
+	text-shadow: none;
+}
+
+::selection {
+	background: rgb(107, 34, 0);
+	text-shadow: none;
+}
+
+html,
+button,
+input,
+select,
+textarea {
+	color: rgb(213, 208, 206);
+}
+
+body {
+	background-color: rgb(25, 25, 25);
+	background-image: url(../../../img/brillant-dark.png);
+}
+
+/*
+ * Highlight color - top ribbon and links
+ */
+
+.top-ribbon {
+	background-color: rgb(219, 54, 8);
+}
+
+a {
+	color:rgb(219, 54, 8);
+	border-bottom: dotted 1px rgb(219, 54, 8);
+}
+
+/*
+ * Text & other Colors
+ */
+
+a:hover {
+	color: rgb(126, 5, 9);
+	border-bottom: dotted 1px rgb(126, 5, 9);
+}
+
+.sparator {
+	border-bottom: dashed 2px rgb(39, 37, 36);
+}
+
+blockquote {
+	border-left: solid 1px rgb(226, 221, 219);
+}
+
+.sidebar-font {
+	color: rgb(39, 37, 36);
+}
+
+@media all and (max-width:800px){
+	.sidebar-font {
+		color: rgb(164, 157, 154);
+	}
+}
+
+figcaption,
+blockquote,
+.meta-info-font,
+.site-footer-font,
+.tagline-font {
+	color: rgb(136, 126, 123);
+}
+
+/*
+ * Home button
+ */
+
+.home a {
+	color: rgb(170, 167, 166);
+}
+
+.home a:hover {
+	color: rgb(255, 255, 255);
+}
+
+/*
+ * Resets - elements that were altered
+ * (usually by being a link) that I want to revert to the original color.
+ */
+
+ .entry-title-font a,
+ .category,
+ .category:hover {
+	color: rgb(236, 231, 229);
+}

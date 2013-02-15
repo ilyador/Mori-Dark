@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>documentation</title>
+		<meta name="description" content="documentation">
+		<meta name="author" content="Ilya Dorman" />
+		<meta name="viewport" content="width=device-width">
+
+		<link rel="stylesheet" href="css/normalize.css">
+		<link rel="stylesheet" href="css/main.css">
+	</head>
+	<body>
+
+
+		<div id="wrapper">
+			<h1>"My Story" template by Hexocat - documentation</h1>
+
+			<h2>Table Of Contents</h2>
+				<ol>
+					<li><a href="#support">Support</a></li>
+					<li><a href="#description">Description</a></li>
+					<li><a href="#structure">Structure</a>
+						<ol>
+							<li><a href="#overview">Overview</a></li>
+							<li><a href="#html">HTML Files</a></li>
+							<li><a href="#css">CSS Files</a></li>
+							<li><a href="#image">Image Files</a></li>
+							<li><a href="#javascript">JavaScript Files</a></li>
+							<li><a href="#other">Other Files</a></li>
+						</ol>
+					</li>
+					<li><a href="#features">Features</a>
+						<ol>
+							<li><a href="#variants">Switching Variants</a></li>
+							<li><a href="#twitter">Twitter</a>
+								<ol>
+									<li><a href="#stream">Stream</a></li>
+									<li><a href="#twitting">Twitting</a></li>
+								</ol>
+							</li>
+							<li><a href="#responsive">Responsive Images</a></li>
+							<li><a href="#videos">Embedding Videos in Post</a></li>
+							<li><a href="#fontawesome">Font Awesome</a></li>
+							<li><a href="#analytics">Google analytics</a></li>
+						</ol>
+					</li>
+					<li><a href="#policy">Policy</a></li>
+				</ol>
+
+			<h2 id="support">Support</h2>
+			<p>Thank you for purchasing my template. Below you will find the explanation how to setup and customize this template. If you have questions that are beyond the scope of this help file, but related to the template please feel free to contact me via my <a href="http://themeforest.net/user/Hexocat">ThemeForest profile</a>.</p>
+
+			<h4>What I support:</h4>
+			<ul>
+				<li>Bugs, issues and display inconsistencies between latest versions of modern desktop and mobile browsers.</li>
+				<li>Looks and functionality customization (depending on the scope of the issue).</li>
+			</ul>
+			<h4>What I do not support:</h4>
+			<ul>
+				<li>Internet Explorer &amp; other outdated browsers</li>
+				<li>Using HTML, CSS or JavaScript</li>
+				<li>Server and hosting Problems</li>
+			<li>All 3rd party plug-ins I've included are tested to be working flawlessly in latest versions of modern browsers. However, if you encounter a bug or want to extend or change the functionality of those plug-ins beyond their role in the template, please refer to their creators. All plug-ins included have full credit and contact options of the creator.</li>
+			</ul>
+
+			<h2 id="description">Description</h2>
+			<p>"My Story" is a portfolio website template for designers, illustrators and photographers. It is blazing fast and super responsive - fitting all mobile and tablet resolutions.</p>
+			<p>The template includes HTML, CSS, JavaScript, font files and some additional files</p>
+
+			<h2 id="structure">Structure</h2>
+
+			<h3 id="overview">Overview</h3>
+			<p>In order to edit the contents of the template, a basic knowledge of HTML and CSS is required, however in order to modify it, knowledge of HTML5, CSS3, JavaScript and jQuery is required.</p>
+			<p>The HTML structure of the template is based on <a href="http://html5boilerplate.com/">HTML5 Boilerplate (H5BP)</a>.</p>
+			<p>I use only classes, never IDs, this is to make the CSS classes modular and reusable and also to prevent specificity "wars". Since I try to reuse classes, make sure that when you make changes they don't appear in other unwanted places.</p>
+
+			<h3 id="html">HTML Files</h3>
+				<ul>
+					<li>index.html</li>
+					<li>index-hex.html</li>
+					<li>gallery.html</li>
+					<li>gallery-hex.html</li>
+					<li>categories.html</li>
+					<li>post.html</li>
+					<li>single-image.html</li>
+					<li>404.html</li>
+				</ul>
+
+			<h3 id="css">CSS Files</h3>
+			<ul>
+				<li>
+					<p>Normalize.css - Part of the HTML5 Boilerplate, resets default browsers styles, so when other styles implemented they look the same in all browsers.</p>
+				</li>
+				<li>
+					<p>Main.css - Most of the structure of all pages, including:</p>
+					<ul>
+						<li>Base styles: opinionated defaults (from H5BP)</li>
+						<li>Basic layout – shapes elements that appear in all pages.</li>
+						<li>Hexagon shape defaults – for the hexagon gallery</li>
+						<li>Works &amp; Gallery effects – hover effects</li>
+						<li>Works – the works displayed at the home-page</li>
+						<li>About me – the about text and twitter stream</li>
+						<li>Blog &amp; Single post</li>
+						<li>Gallery</li>
+						<li>Single work</li>
+						<li>Home button</li>
+						<li>Footer</li>
+						<li>Helper classes (from H5BP)</li>
+					</ul>
+				</li>
+				<li>
+					<p>Typography.css - text styling, including:</p>
+					<ul>
+						<li>Common elements (partially from H5BP)</li>
+						<li>Main page</li>
+						<li>Blog, Single post, Gallery &amp; Single work (They use same typographical classes)</li>
+						<li>Footer</li>
+					</ul>
+				</li>
+				<li>
+					<p>Font-face.css - Here are all the @font-face imports</p>
+				</li>
+				<li>
+					<p>Color schemes (folder) contains dark/light folders – each color scheme has a dark and light variant, 6 schemes altogether.</p>
+					<ul>
+						<li>Hot-pink.css</li>
+						<li>Juicy-orange.css</li>
+						<li>Ocean-blue.css</li>
+					</ul>
+				</li>
+			</ul>
+
+			<h3 id="image">Image files</h3>
+			<P>Image files that appear in the demo are not included in the template.</P>
+			<p>The image size recommended for the "works" section in the home page and the gallery thumbnails is 520 * 640 pixels.</p>
+
+			<h3 id="javascript">JavaScript Files</h3>
+			<ul>
+				<li>main.js - Here are all the custom functions (currently twitter integrations functions)</li>
+				<li>plugins.js - JavaScript micro-libraries and jQuery plug-ins located here</li>
+				<li>jquery-1.8.0.min.js</li>
+			</ul>
+
+			<h3 id="other">Other Files</h3>
+			<p>There are a few other files, most of them from H5BP, that provide advanced functionality. They are not within the scope of this documentation and I strongly advise not to modify them without understanding their functionality.</p>
+
+			<h2 id="features">Features</h2>
+
+			<h3 id="variants">Switching Variants</h3>
+			<p>The built-in modifications that are available are the following:</p>
+			<ul>
+				<li>
+					<p>Color and shape variants:</p>
+					<p>There are 12 variants of the website - square and hexagon shapes, dark or light background and 3 color schemes. You can choose any mix of the variants you like - simply go to the "variants" folder, find the one you like, take the files from the color folder and copy them to the main folder, overwriting the existing files.</p>
+				</li>
+
+				<li>
+					<p>2-4 images in the "works" section in the main page</p>
+					<p>The template comes by default with 3 images in the "works" section, if you want to have 2 images, remove the link with "category" class from the div with "works" class. This is the code to remove:</p>
+
+					<pre><code>
+&lt;a href="gallery.html" class="category category-1"&gt;
+	&lt;div class="wrapper"&gt;
+		&lt;img class="thumbnail" src="img/placeholder.jpg" alt="thumbnail"&gt;
+	&lt;/div&gt;&lt;!--wrapper--&gt;
+	&lt;div class="category-name"&gt;&lt;h2 class="nav-font"&gt;Print&lt;/h2&gt;&lt;/div&gt;
+&lt;/a&gt;&lt;!--category-1--&gt;
+					</code></pre>
+					<p>To to have a forth work, duplicate the code above and change the class of "works" class div to "four works"</p>
+				</li>
+
+				<li>
+					<p>Using two-column blog posts for iPad and other tablets</p>
+					<p>The 2 columns will appear when using tablet-size monitors, if you prefer to always have only one column, go to "post.html" find main article tag (line 33 by default):</p>
+					<code> &lt;article class="post two-column"&gt; </code>
+					<p>And remove the "two-column" class.</p>
+				</li>
+			</ul>
+
+			<h3 id="twitter">Twitter</h3>
+
+			<h4 id="stream">Stream</h4>
+			<p>To show live twitter stream I use <a href="http://elektronaut.github.com/jquery.livetwitter/">LiveTwitter 1.7.4 jQuery plugin by Inge Jørgensen</a>. All the settings for the stream appear and documanted in "main.js" file.</p>
+			<p>To start using it right away go to the calling to livetwitter (line 4 by default):</p>
+			<pre><code>$(".tweets").liveTwitter('your-name-on-twitter', {</code></pre>
+			<p>and put your twitter username in.</p>
+
+			<h4 id="twitting">Twitting</h4>
+			<p>When you click "Tweet me to let me know what you think" a twitter tweet page will open up with a text set by the template. The text is created in the "main.js" file (line 57 by default):</p>
+			<pre><code>
+var twitterUrl = "http://twitter.com/home/?status=",
+	beginning = encodeURIComponent("Interesting stuff on "),
+	pageUrl = location.href,
+	pageTitle = encodeURIComponent(document.title),
+	end = encodeURIComponent(" by @user #hashtag ");
+url = twitterUrl + beginning + pageUrl + end;
+			</code></pre>
+			<p>You can change the "beginning" and "end" text variables and mix their order in the "url" variable.</p>
+
+			<h3 id="responsive">Responsive Images</h3>
+			<p>For making the images responsive I use <a href="http://adaptive-images.com/">Adaptive-Images by Matt Wilcox</a>. All you need to to do is move the .htaccess file (in "additional files" folder) to the root folder of your website and the hosting server must support PHP.</p>
+
+			<h3 id="videos">Embedding Videos in Post</h3>
+			<p>If you want to include a youtube video in a blog post, in order to keep it's size responsive, you should wrap it with a div giving it a "video-embed" class. Like this:</p>
+			<pre><code>
+&lt;div class="video-embed"&gt;&lt;iframe width="560" height="315" src="http://www.youtube.com/embed/_nW5AF0m9Zw" frameborder="0" allowfullscreen&gt;&lt;/iframe>&lt;/div&gt;
+			</code></pre>
+
+			<h3 id="fontawesome">Font awesome</h3>
+			<p>I use <a href="http://fortawesome.github.com/Font-Awesome/">"Font Awesome" by Twitter</a> for UI and social service images. To insert a font awesome image use the following code:</p>
+			<code>&lt;i class="icon-name"&gt;&lt;/i&gt;</code>
+			<p>For the list of all available icons go to their page</p>
+
+			<h3 id="analytics">Google analytics</h3>
+			<p>Every page of the template is google-analytics ready. Just go to the bottom of the page, find the code and insert your site ID (if you don't use Google analytics I suggest you remove that code)</p>
+
+			<h2 id="policy">Policy</h2>
+			<p>All rights for code (markup/css) and design belong to me. You can not claim you are the author of markup and design and you can not delete my name from meta in the head. Template is under protection of DMCA and any break of copyright will be reported.</p>
+			<p>Only customers who purchased the template legally via ThemeForest (not any other illegally selling templates website) will get responses to additional questions. Thank you!</p>
+		</div>
+
+	</body>
+</html>

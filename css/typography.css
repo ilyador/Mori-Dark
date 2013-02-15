@@ -1,0 +1,325 @@
+/*
+ * This file contains all the typography related rules of the site,
+ * including margins and paddings that are required to shape blocks of text.
+ * There are additional typography rules in 'normalize.css'
+ */
+
+
+/* ==========================================================================
+   Common elements
+   ========================================================================== */
+
+html,
+button,
+input,
+select,
+textarea {
+	font-family: 'OpenSansRegular', Arial, sans-serif;
+	font-size: 15px;
+}
+
+a {
+	text-decoration: none;
+	margin: 0 2px;
+
+	-webkit-transition: all 0.4s ease-out;
+	   -moz-transition: all 0.4s ease-out;
+			transition: all 0.4s ease-out;
+}
+
+a:hover {
+	-webkit-transition: all 0.2s ease-out;
+	   -moz-transition: all 0.2s ease-out;
+			transition: all 0.2s ease-out;
+}
+
+
+p,
+pre {
+	margin: 0 0 1.5em;
+}
+
+blockquote {
+	margin: 0 0 1.5em;
+	padding: 0 1.5em;
+	font-family: 'OpenSansItalic';
+}
+
+b,
+strong {
+	font-style: normal;
+	font-weight: normal;
+	font-family: "OpenSansBold";
+}
+
+i,
+cite,
+em,
+var,
+address,
+dfn {
+	font-style: normal;
+	font-family: "OpenSansItalic";
+}
+
+h1 {
+	font-size: 3.75em;
+}
+
+h2 {
+	font-size: 1.75em;
+}
+
+h3 {
+	font-size: 1.5em;
+}
+
+h4 {
+	font-size: 1.4em;
+}
+
+h5 {
+	font-size: 1.25em;
+}
+
+h6 {
+	font-size: 1.1em;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: 'BandaRegular', Arial, sans-serif;
+	font-weight: normal;
+	margin: 0.75em 0 0.25em;
+}
+
+.content {
+	line-height: 1.6;
+	-ms-word-break: break-all;
+	word-break: break-all;
+	word-break: break-word;
+	-webkit-hyphens: auto;
+	-moz-hyphens: auto;
+	hyphens: auto;
+}
+
+/* ==========================================================================
+   Main page
+   ========================================================================== */
+
+/*
+ * Typography classes
+ */
+
+.title-font {
+	font: 126px/126px 'Sofia', Arial, sans-serif;
+	margin: 0.5em 0;
+	word-spacing: -14px;
+}
+
+@media all and (min-width:601px) and (max-width:1030px) {
+
+	.title-font {
+		font: 100px/100px 'Sofia', Arial, sans-serif;
+	}
+}
+
+.tagline-font {
+	font: 36px/50px 'OpenSansLight', Arial, sans-serif;
+}
+
+.nav-font {
+	font: 45px/55px 'Matchbook', Arial, sans-serif;
+	letter-spacing: -1px;
+}
+
+.works-font {
+	font: 58px/60px 'Matchbook', Arial, sans-serif;
+	letter-spacing: -3px;
+	margin: 0;
+}
+
+@media all and (max-width:600px) {
+
+	.title-font {
+		font: 40px/100px 'Sofia', Arial, sans-serif;
+	}
+	.nav-font {
+		font-size: 48px;
+		letter-spacing: -2px;
+	}
+	.tagline-font {
+		font: 24px/37px 'BandaRegular', Arial, sans-serif;
+	}
+}
+
+.about-font {
+	font: 20px/30px 'BandaRegular', Arial, sans-serif;
+	text-align: justify;
+}
+
+.about-font p {
+	margin-top: 0;
+}
+
+.sidebar-font {
+	font: 126px 'Sofia', Arial, sans-serif;
+	margin: 0;
+	text-shadow: 4px 3px 0 rgb(102, 76, 62);
+}
+
+@media all and (min-width:801px) and (max-width:1050px) {
+	.sidebar-font {
+		font-size: 214px;
+		line-height: 238px;
+	}
+}
+
+@media all and (max-width:800px){
+	.sidebar-font {
+		font-size: 58px;
+		line-height: 61px;
+	}
+}
+
+.post .prev-next {
+	margin-top: 8px;
+}
+
+.twitter-stream {
+	text-align: left;
+}
+
+.tweets p {
+	margin: 0 0 1em;
+}
+
+
+/* ==========================================================================
+   Blog, Single post, Gallery & Single work (They use same typograhical classes)
+   ========================================================================== */
+
+/*
+ * Typography classes
+ */
+
+.entry-title-font {
+	font-size: 38px;
+	margin: 0;
+}
+
+@media all and (max-width:480px){
+	.entry-title-font {
+		font-size: 28px;
+		margin: 0;
+	}
+}
+
+@media all and (min-width:801px) {
+
+	.gallery-header .entry-title-font {
+		font-size: 62px;
+	}
+}
+
+.blog-categories .entry-title-font {
+	font-size: 28px;
+}
+
+.entry-title-font a {
+	margin: 0;
+	border: none;
+}
+
+.meta-info-font, figcaption {
+	margin: 0;
+	font-family: 'OpenSansItalic', Arial, sans-serif;
+	font-size: 13px;
+}
+
+@media all and (min-width:1401px) {
+
+	.post .content {
+		font-family: 'OpenSansRegular', Arial, sans-serif;
+		font-size: 19px;
+	}
+
+	.post .meta-info-font, .post figcaption {
+		font-family: 'OpenSansItalic', Arial, sans-serif;
+		font-size: 16px;
+	}
+
+	.post .entry-title-font {
+		font-size: 62px;
+		margin-bottom: 10px;
+	}
+}
+
+.post .content > p:first-child {
+	font-size: 1.2em;
+	font-family: "OpenSansLight";
+}
+
+/*
+ * Positioning and other
+ */
+
+ .blog-excerpts .content p, .blog-categories p {
+	line-height: 1.4;
+	margin: 0 0 4px 0;
+}
+
+.post header, .image header {
+	margin-bottom: 30px;
+	text-align: center;
+	padding: 0 20px;
+}
+
+.post-excerpt header {
+	margin-bottom: 13px;
+}
+
+.post header h2 {
+	margin-bottom: 5px;
+}
+
+.post .content {
+	margin-bottom: 40px;
+}
+
+.post-excerpt .content p {
+	margin: 0;
+}
+
+@media all and (min-width:1021px) and (max-width:1400px) {
+
+	.two-column {
+		-moz-column-count: 2;
+		-moz-column-gap: 42px;
+		-webkit-column-count: 2;
+		-webkit-column-gap: 42px;
+		column-count: 2;
+		column-gap: 42px;
+	}
+}
+
+.gallery-header {
+	padding: 45px 10px 22px;
+	text-align: center;
+}
+
+.description header {
+	margin: -6px 0 2em 0;
+}
+
+
+/* ==========================================================================
+   Footer
+   ========================================================================== */
+
+.site-footer {
+	text-align: center;
+}
+
+.site-footer-font {
+	font: 13px/20px 'OpenSansLight', Arial, sans-serif;
+}

@@ -1,0 +1,118 @@
+
+/* ==========================================================================
+   Color Scheme: Hot Orange - Dark
+   ========================================================================== */
+
+/*
+ * Text selection colors
+ */
+
+::-moz-selection {
+	background: rgb(54, 41, 54);
+}
+
+::selection {
+	background: rgb(54, 41, 54);
+}
+
+html,
+button,
+input,
+select,
+textarea {
+	color: rgb(213, 208, 206);
+	text-shadow: 2px 2px 4px rgb(0, 0, 0);
+}
+
+body {
+	background-color: rgb(25, 25, 25);
+	background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGQAAABkCAYAAABw4pVUAAAFJ0lEQVR4Xu2dITBtURiF34lEor+qKpFIJBKJVFVViUQikUikquoViUTvRnveN3NWeDPWnb3MmDF7zrHX2Wuvu/7/3/vsO1xdXdXe3t7kz4+f1dXVen5+btq2t7fr9va2advf36/Ly8um7fPzs+bn55u209PTOj4+btpeX19reXl5tO3i4qIODg6a61ZWVurl5WUUH917cnJS09/m3vX19Xp8fGzapsNR09+mjcbq+/u7hmForltaWqq3t7fR/zc3N1dfX1/NdcNPIvL3749ACPl9DhoEISSEmI2AGZyBjOXh4aE2NjYas7m5uamdnZ2mjQxSNTnql4z07u6utra2mn6pDzL6yWRS05/Reyno2N3drevr6+ZewkxYNjc36/7+vrl3YWGhPj4+mja6Lh9Zbgoxw9M9nCjEbAqEEDdCKAMnQzs8PKzz8/PR7JhM+OzsrI6OjkazXjUDJ8yUbVMlgfCR4VKAQUECZeVPT0+1trbWPC/1S31EIW4KMcPTPZwoxGwKhBBDQv4pM1PZmkrylKWS4VKWrxouBRNkhmTqtBRABk73UrWCMmvqg+6lcaEgJgoxVIgZpL7hRCFm/IcQN0Iog6S1YzIlMkh1PZ76UMvvFHSo2TY9L2F+f3+vxcXF0b0GtDeAKhPqkkEU4qYQMzzdw4lCzKZACHEjhMyVMk0yXDI0Mi8yXCrxkxkSFip5Ux+E5X9vDKQqBGGhNgowohA3hZjh6R5OFGI2BUKIGyFkpGr2SYZGJWV1MxmtWZMJU8mbgg7aAEf4KMCgwIHaKKNXN9lR2T8KcVOIGZ7u4UQhZlMghLgRQqZEu7xp8xeti1OZXq0GUJBAbWrpnu6ldXHKmGlcKJhQ3wCg4In+XxTiphAzPN3DiULMpkAIcSOEsnLKcMmUqKRMRkpr1hQkUEBAAYbaB5Xu1d3vVF2gagCZPz0HtaX8bqYGgpOPLDOSQkgIMRsBMzgDGThl4FQaJ0Mjo6fMmjJcMmsydQpEaJe8WoWgfsnA1SoEPS+V2um6fGS5KcQMT/dwohCzKRBC3AihLJoMSD11ja6jkjcZLt1LGTOZMJWyaZe8uuFP3VBHwQn1QWNA10Uhbgoxw9M9nCjEbAqEEDdCqKxOG8LU7J3MkMxVDRxoY5v6+ho9B/VLVQiqEFCmrmb0FHQkUzdTQ8rvIWQGRsAMYkzdkBDpjHMyNMq2KSNVD6ShdXYKOshIaRmBsJCR0nXqhjpaCqDqBwVFtOYfhRgqxAxS33CiEDP+Q4gbIWTM6nvqZK7ql57QGrh62pt6yhwFE+opeJRZk4FTJUHN3ikQiULcFGKGp3s4UYjZFAghboSQKZFpktFTFq2Wy9XDWMgg1cNnKDumagAtD6iH3tA76WqZnvYGRCFuCjHD0z2cKMRsCoQQN0LIvMjkyAwp6yUjpVI2bTBTX3OjdXE1Y6ZsW13vpgBDPRaXMCdTN1ND1tRDyAyMgBnEmLobIVR+J7Ohsrp6SA0FCeq75nQvBQnqZjx1/ZzGQH13Xf1Gu5i6mRpi6iFkBkbADGJM3Y0Q9WtM1ffFKUhQT4oj01QPvaEMnIyejFQ9KY4CG2qj5QHql6oVUYibQszwdA8nCjGbAiHEjRAyXDIb9atI1S9qIfOn0j0ZMwUidK8aYNDzUh8UYNCpcDRWZOrZ/W6mhmTqIWQGRsAMYkzdjRAyFjJmaqN1bMpc1fVu9RU5NROm9W4yZnpPnUroVK1Qd+KrO+ejEDeFmOHpHk4UYjYFQogZIX8Bv0rdsErboeEAAAAASUVORK5CYII=);
+}
+
+
+/*
+ * Text shadow
+ */
+
+.title-font {
+	text-shadow: 4px 3px 0 rgb(102, 76, 62);
+}
+
+
+@media all and (min-width:601px) and (max-width:1030px) {
+
+	.title-font {
+		text-shadow: 3px 2px 0 rgb(102, 76, 62);
+	}
+}
+
+/*
+ * Highlight color - top ribbon and links
+ */
+
+.top-ribbon {
+	background-color: rgb(192, 23, 104);
+}
+
+a {
+	color: rgb(192, 23, 104);
+	border-bottom: dotted 1px rgb(192, 23, 104);
+}
+
+/*
+ * Text & other Colors
+ */
+
+a:hover {
+	color: rgb(156, 18, 140);
+	border-bottom: dotted 1px rgb(156, 18, 140);
+}
+
+.sparator {
+	border-bottom: dashed 1px rgb(90, 87, 86);
+}
+
+blockquote {
+	border-left: solid 1px rgb(226, 221, 219);
+}
+
+.sidebar-font {
+	color: rgb(136, 126, 123);
+}
+
+@media all and (max-width:800px){
+	.sidebar-font {
+		color: rgb(164, 157, 154);
+	}
+}
+
+figcaption,
+blockquote,
+.meta-info-font,
+.site-footer-font,
+.tagline-font {
+	color: rgb(136, 126, 123);
+}
+
+/*
+ * Home button
+ */
+
+.home a {
+	color: rgb(170, 167, 166);
+}
+
+.home a:hover {
+	color: rgb(255, 255, 255);
+}
+
+/*
+ * Resets - elements that were altered
+ * (usually by being a link) that I want to revert to the original color.
+ */
+
+ .entry-title-font a,
+ .category,
+ .category:hover {
+	color: rgb(213, 208, 206);
+}
