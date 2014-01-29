@@ -1,6 +1,7 @@
 Mori-Dark
 =========
 
-An HTML5 minimalistic super-responsive portfolio and blog template
+An HTML5 minimalistic super-responsive portfolio and blog template.
+CSS-only hexagon hive gallery!
 
-http://themes.ilyadorman.com/mori-dark/
+https://googledrive.com/host/0B48OkScOEMY3cXg1UUx5UVlxRHM/index.html
