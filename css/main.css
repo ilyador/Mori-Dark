@@ -80,12 +80,6 @@ textarea {
    Basic layout
    ========================================================================== */
 
-@media only screen and (-webkit-min-device-pixel-ratio: 2) {
-	body {
-		background-size: 50%;
-	}
-}
-
 .site-header {
 	min-width: 280px;
 	max-width: 826px;
